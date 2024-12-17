@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição</title>
+  <link rel="stylesheet" href="./2_styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./assets/Green Math Materials Banner.png" alt="banner" class="banner">
+    </header>
+    <h2>Formulário de Inscrição</h2>
+    <form>
+
+      <section aria-labelledby="dados-pessoais-title">
+        <h3 id="dados-pessoais-title">Dados Pessoais</h3>
+        <div class="input-group">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="input-group">
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade" placeholder="Idade" required>
+        </div>
+        <div class="input-group">
+          <label for="data-nascimento">Data de Nascimento:</label>
+          <input type="date" name="data-nascimento" id="data-nascimento" required>
+        </div>
+        <div class="input-group">
+          <label for="genero">Gênero:</label>
+          <select name="genero" id="genero" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="nao-declarar">Prefiro não declarar</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="estado-civil">Estado Civil:</label>
+          <select name="estado-civil" id="estado-civil" required>
+            <option value="">Selecione</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+        </div>
+      </section>
+
+      <section aria-labelledby="contato-title">
+        <h3 id="contato-title">Contato</h3>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+        </div>
+      </section>
+
+      <section aria-labelledby="endereco-title">
+        <h3 id="endereco-title">Endereço</h3>
+        <div class="input-group">
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+        </div>
+        <div class="input-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+        </div>
+        <div class="input-group">
+          <label for="estado">Estado:</label>
+          <input type="text" name="estado" id="estado" placeholder="Estado" required>
+        </div>
+        <div class="input-group">
+          <label for="pais">País:</label>
+          <input type="text" name="pais" id="pais" placeholder="País" required>
+        </div>
+      </section>
+
+      <section aria-labelledby="redes-sociais-title">
+        <h3 id="redes-sociais-title">Redes Sociais</h3>
+        <div class="input-group">
+          <label for="linkedin">LinkedIn:</label>
+          <input type="url" name="linkedin" id="linkedin" placeholder="URL do LinkedIn">
+        </div>
+        <div class="input-group">
+          <label for="github">GitHub:</label>
+          <input type="url" name="github" id="github" placeholder="URL do GitHub">
+        </div>
+      </section>
+
+      <section aria-labelledby="profissionais-title">
+        <h3 id="profissionais-title">Informações Profissionais</h3>
+        <div class="input-group">
+          <label for="escolaridade">Escolaridade:</label>
+          <select name="escolaridade" id="escolaridade" required>
+            <option value="">Selecione</option>
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio">Ensino Médio</option>
+            <option value="tecnico">Ensino Técnico</option>
+            <option value="superior">Ensino Superior</option>
+            <option value="pos-graduacao">Pós-graduação</option>
+            <option value="mestrado">Mestrado</option>
+            <option value="doutorado">Doutorado</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="experiencia">Experiência Profissional:</label>
+          <textarea name="experiencia" id="experiencia" rows="4" placeholder="Descreva sua experiência profissional"
+            required></textarea>
+        </div>
+        <div class="input-group">
+          <label for="habilidades">Habilidades:</label>
+          <input type="text" name="habilidades" id="habilidades" placeholder="Liste suas habilidades" required>
+        </div>
+        <div class="input-group">
+          <label for="idiomas">Idiomas:</label>
+          <input type="text" name="idiomas" id="idiomas" placeholder="Quais idiomas você fala?" required>
+        </div>
+        <div class="input-group">
+          <label for="objetivo">Objetivo Profissional:</label>
+          <textarea name="objetivo" id="objetivo" rows="3" placeholder="Descreva seu objetivo profissional"
+            required></textarea>
+        </div>
+      </section>
+
+      <section aria-labelledby="outros-title">
+        <h3 id="outros-title">Outros</h3>
+        <div class="input-group">
+          <label for="disponibilidade-viagens">Disponibilidade para Viagens:</label>
+          <select name="disponibilidade-viagens" id="disponibilidade-viagens" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            <option value="ocasionalmente">Ocasionalmente</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="salario">Salário Pretendido:</label>
+          <input type="text" name="salario" id="salario" placeholder="Salário Pretendido" required>
+        </div>
+        <div class="input-group">
+          <label for="curriculo">Anexar Currículo:</label>
+          <input type="file" name="curriculo" id="curriculo" required>
+        </div>
+      </section>
+
+      <div class="submit-button">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
